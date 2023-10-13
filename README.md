@@ -2,31 +2,26 @@
 
 ## Auteurs
 
-- Tuan Hung
-- Jiaqi Ai
+- Tuan Hung NGUYEN (M2 THYP)
+- Jiaqi Ai (M2 MTI)
 
 ## Introduction
 
-Avec la montée constante du numérique dans notre quotidien, Paris se prépare à offrir une expérience touristique enrichie et diversifiée. Ce projet se propose de digitaliser la découverte de la Ville Lumière à travers plusieurs axes majeurs.
+Avec la montée constante du numérique dans notre quotidien, Paris se prépare à offrir une expérience touristique enrichie et diversifiée. Ce projet se propose de digitaliser la découverte de la Ville Lumière à travers plusieurs axes majeurs. La richesse de la gastronomie parisienne sera mise en avant à travers une plateforme interactive. Les visiteurs pourront y découvrir les spécialités locales, réserver des tables dans des restaurants authentiques et même suivre des ateliers de cuisine virtuels.
 
-## Axes du Projet
+## Expérience Culinaire
 
-### Expérience Culinaire
+L'idée consiste à créer une interface pour les touristes de découvrir la gastronomie de la région parisienne, y compris les cuisines françaises, vietnamiennes, chinoises, etc. Le principe est de distribuer des tags sur les restaurants en fonction de leur origine culinaire. Les utilisateurs pourront sélectionner leurs critères en matière de gastronomie. À partir de ces critères, nous serons en mesure de leur recommander des restaurants.
 
-La richesse de la gastronomie parisienne sera mise en avant à travers une plateforme interactive. Les visiteurs pourront y découvrir les spécialités locales, réserver des tables dans des restaurants authentiques et même suivre des ateliers de cuisine virtuels.
+## Répartition des Tâches
 
-### Immersion Culturelle
+- Tuan Hung : Responsable de la majorité des tâches de développement (codage, création de la base de données, déploiement).
+- Jiaqi : Responsable de la partie conception, de la collecte de données sur les restaurants et des tests de l'application.
 
-Nous développerons des outils pour permettre aux touristes de s'immerger dans l'histoire et l'art parisiens, tout en bénéficiant d'un guide digitalisé qui leur fournira des informations enrichissantes. Cette initiative sera particulièrement centrée sur les musées emblématiques de Paris.
+## Rétroplanning
 
-### La Route de la Mode
+Vous pouvez consulter notre rétroplanning à l'adresse suivante : [Gantt Chart](https://docs.google.com/spreadsheets/d/1Smf0AGayYaKLLXAY-mYy6bWEJUkBLgUWZ6znTZX_G3g/edit?usp=sharing)
 
-Paris, étant le cœur de la haute couture, mérite une exploration dédiée à la mode. Les touristes bénéficieront d'un guide digitalisé des meilleures boutiques, des grands magasins historiques et des quartiers emblématiques de shopping. Des conseils sur les tendances actuelles, ainsi que des informations exclusives sur les ventes et les événements de mode, seront également inclus.
+## Maquette de la Base de Données
 
-### Paris 2024
-
-En anticipation des Jeux Olympiques de 2024, une section dédiée sera créée. Elle fournira des informations sur les différents événements, les lieux de compétition et comment optimiser son séjour durant cette période effervescente.
-
-## Conclusion
-
-Paris, avec son mélange unique d'histoire, de culture et de modernité, mérite une approche numérique adaptée à sa grandeur. Ce projet vise non seulement à digitaliser l'expérience touristique, mais aussi à renforcer le lien entre les visiteurs et la capitale française, en leur offrant un voyage inoubliable.
+![Diagramme de la Base de Données](https://drive.google.com/file/d/1tNQ3kytOQZ_gnjsGzMIyK1WCCsXysW17/view?usp=drive_link)
