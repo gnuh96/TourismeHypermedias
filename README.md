@@ -24,4 +24,4 @@ Vous pouvez consulter notre rétroplanning à l'adresse suivante : [Gantt Chart]
 
 ## Maquette de la Base de Données
 
-![Diagramme de la Base de Données](https://drive.google.com/file/d/1KHY-ZB1Yum3IfYe1eMjR8RkM07cqqOrL/view?usp=sharing)
+[Diagramme de la Base de Données](https://dbdiagram.io/d/Diagramme-SQL-6529d9cdffbf5169f0a95c21)
