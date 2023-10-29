@@ -1,4 +1,4 @@
-# Projet de Tourisme Numérique à Paris
+# Découverte Digitale des Saveurs de Paris
 
 ## Auteurs
 
