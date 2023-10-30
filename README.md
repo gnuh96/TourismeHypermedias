@@ -13,7 +13,7 @@ Avec la prévalence croissante de la technologie numérique, Paris continue d'é
 
 L'essence du projet est de proposer une plateforme dédiée à la gastronomie asiatique à Paris. Cela engloberait des cuisines telles que chinoises, vietnamiennes, thaïlandaises, japonaises, coréennes, et bien d'autres. Le système distribuera des tags aux restaurants selon leur spécialité asiatique, aidant ainsi les utilisateurs à filtrer leurs choix en fonction de leurs préférences culinaires. En se basant sur ces critères, des recommandations personnalisées de restaurants seront fournies. Les utilisateurs auront également la possibilité de laisser des avis et des notes, enrichissant ainsi la communauté avec leurs expériences.
 
-## Public Cible
+Public Cible
 
 Résidents asiatiques de Paris : Pour ceux qui ressentent le mal du pays, cette plateforme sera une bouffée d'air frais, les aidant à se reconnecter avec leur patrimoine culinaire.
 
