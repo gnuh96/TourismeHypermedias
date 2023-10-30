@@ -16,7 +16,9 @@ L'essence du projet est de proposer une plateforme dédiée à la gastronomie as
 ## Public Cible
 
 Résidents asiatiques de Paris : Pour ceux qui ressentent le mal du pays, cette plateforme sera une bouffée d'air frais, les aidant à se reconnecter avec leur patrimoine culinaire.
+
 Touristes asiatiques : Lors de leurs voyages, beaucoup cherchent un mélange de nouvelles découvertes et de familiarité. La plateforme leur offrira un repère pour trouver des saveurs familières au cœur de Paris.
+
 Amateurs de cuisine asiatique : Parisiens ou touristes d'autres origines qui souhaitent s'aventurer dans l'exotisme des saveurs asiatiques trouveront également cette plateforme utile.
 
 ## Répartition des Tâches
