@@ -1,0 +1,15 @@
+#folder
+node_modules/
+dist/
+.vscode/
+
+.DS_Store
+
+# local env files
+.env.local
+.env
+
+# app mobile
+ios/
+android/
+android-keys/
