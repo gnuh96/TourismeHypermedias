@@ -6,6 +6,23 @@ import DataGridComponent from '../components/dataGrid'
 export default function OmekaS() {
   const [data, setData] = useState([])
   useEffect(() => {
+    fetch('./bdd/omk.sql')
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Failed to load SQL file')
+        }
+        return response.text()
+      })
+      .then(sqlText => {
+        // Process the SQL text as needed
+        console.log(sqlText)
+        // You can now use 'sqlText' in your application for further processing or executing the SQL statements.
+      })
+      .catch(error => {
+        console.error(error)
+      })
+  }, [])
+  useEffect(() => {
     const getData = async () => {
       const items = await ItemService.getAllItem()
       items.map((item: any) => {
