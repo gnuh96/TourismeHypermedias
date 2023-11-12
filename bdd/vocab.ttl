@@ -5,18 +5,63 @@
 @prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
 @prefix o: <http://omeka.org/s/vocabs/o#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix tagr: <https://restauranttag.univ-paris8.fr/onto/tagr#> .
+@prefix tagr: <https://restauranttag.univ-paris8.fr/tagr#> .
 @prefix ma: <http://www.w3.org/ns/ma-ont#>.
 
-<https://restauranttag.univ-paris8.fr/onto/tagr#> a owl:Ontology ;
+<https://restauranttag.univ-paris8.fr/tagr#> a owl:Ontology ;
     dcterms:title "Restaurant tag" .
 
-tagr:Restaurants a rdfs:Class ;
-    rdfs:label "Restaurants" ;
+tagr:Restaurant a rdfs:Class ;
+    rdfs:label "Restaurant" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
-tagr:Tags a rdfs:Class ;
-    rdfs:label "Tags" ;
+tagr:Tag a rdfs:Class ;
+    rdfs:label "Tag" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+tagr:Avis a rdfs:Class ;
+    rdfs:label "Avis" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+tagr:User a rdfs:Class ;
+    rdfs:label "User" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+tagr:nblike a rdf:Property ;
+    rdfs:label "nblike" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+tagr:nbdislike a rdf:Property ;
+    rdfs:label "nbdislike" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+tagr:first_name a rdf:Property ;
+    rdfs:label "first_name" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+tagr:last_name a rdf:Property ;
+    rdfs:label "last_name" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+tagr:mail a rdf:Property ;
+    rdfs:label "mail" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+tagr:commentaire a rdf:Property ;
+    rdfs:label "commentaire" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+tagr:time_stamp a rdf:Property ;
+    rdfs:label "time_stamp" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
