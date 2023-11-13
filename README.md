@@ -7,19 +7,7 @@
 
 ## Introduction
 
-Avec la prévalence croissante de la technologie numérique, Paris continue d'évoluer en tant que destination touristique. Ce projet vise à digitaliser la découverte de Paris, en mettant l'accent sur les délices culinaires asiatiques authentiques. À travers une plateforme interactive, les résidents asiatiques de Paris pourront redécouvrir le goût authentique de chez eux. De plus, les touristes asiatiques en quête d'un mélange de nouveauté et de familiarité y trouveront un repère, tout comme les Parisiens et autres visiteurs curieux souhaitant s'immerger dans les saveurs exotiques de l'Asie.
-
-## Expérience Culinaire Asiatique
-
-L'essence du projet est de proposer une plateforme dédiée à la gastronomie asiatique à Paris. Cela engloberait des cuisines telles que chinoises, vietnamiennes, thaïlandaises, japonaises, coréennes, et bien d'autres. Le système distribuera des tags aux restaurants selon leur spécialité asiatique, aidant ainsi les utilisateurs à filtrer leurs choix en fonction de leurs préférences culinaires. En se basant sur ces critères, des recommandations personnalisées de restaurants seront fournies. Les utilisateurs auront également la possibilité de laisser des avis et des notes, enrichissant ainsi la communauté avec leurs expériences.
-
-Public Cible
-
-Résidents asiatiques de Paris : Pour ceux qui ressentent le mal du pays, cette plateforme sera une bouffée d'air frais, les aidant à se reconnecter avec leur patrimoine culinaire.
-
-Touristes asiatiques : Lors de leurs voyages, beaucoup cherchent un mélange de nouvelles découvertes et de familiarité. La plateforme leur offrira un repère pour trouver des saveurs familières au cœur de Paris.
-
-Amateurs de cuisine asiatique : Parisiens ou touristes d'autres origines qui souhaitent s'aventurer dans l'exotisme des saveurs asiatiques trouveront également cette plateforme utile.
+L'objectif de ce projet est de promouvoir la véritable cuisine asiatique à Paris via une plateforme interactive. Cette plateforme offrira un système dédié à la gastronomie asiatique de Paris, couvrant une variété de cuisines asiatiques telles que chinoise, vietnamienne, thaïlandaise, japonaise, coréenne, et plus. Elle permettra aux utilisateurs de filtrer les restaurants en fonction de leurs préférences gustatives et fournira des recommandations pour les restaurants les plus authentiques. En plus des informations de base telles que l'emplacement, les heures d'ouverture, les photos, elle inclura également les notes des différentes plateformes, les menus, le coût moyen par personne, les sites web des restaurants et leurs coordonnées. Son mécanisme d'évaluation est unique : les utilisateurs n'ont pas besoin de noter le restaurant, mais ont plutôt trois options : recommander, moyen ou ne pas recommander.
 
 ## Répartition des Tâches
 
