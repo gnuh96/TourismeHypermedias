@@ -59,11 +59,44 @@
       const test = new auth(pa)
       test.getUser(u => {
         console.log('user', u)
+        console.log('ommk', test.omk)
       })
+      function putAleaData(e, d) {
+        console.log(e, d)
+        let aleaData = {},
+          propsRt = []
+        console.log('d', d['o:resource_template_property'][3]['o:property'])
+        try {
+          d['o:resource_template_property'].forEach(p => {
+            console.log('id', p['o:property']['o:id'])
+            let prop = test.omk.getPropTerm(p['o:property']['o:id'])
+            aleaData[prop] = 'blabla'
+          })
+        } catch (error) {
+          console.error('Error during iteration:', error)
+        }
+
+        console.log('Finished iterating over elements')
+        test.omk.createRessource(aleaData)
+      }
+      let contD = d3.select('#infosProjet').append('div').attr('class', 'col')
+      let ulRT = contD.append('ul'),
+        liRT = ulRT.selectAll('li').data(test.omk.rts).enter().append('li')
+      liRT
+        .append('a')
+        .attr('href', d => d['@id'])
+        .attr('target', '_blanck')
+        .text(d => d['o:label'])
+      liRT
+        .append('button')
+        .attr('type', 'button')
+        .attr('class', 'btn btn-danger mx-3')
+        .html('<i class="fa-solid fa-shuffle"></i>')
+        .on('click', putAleaData)
 
       /*usage de l'api github :https://docs.github.com/fr/rest/repos/contents?apiVersion=2022-11-28
-    avec octokit : https://github.com/octokit/octokit.js
-    */
+      avec octokit : https://github.com/octokit/octokit.js
+      */
 
       async function fetchRepoInfo(owner, repo) {
         const prs = await a.octo.rest.repos.get({
