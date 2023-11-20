@@ -79,6 +79,7 @@
         console.log('Finished iterating over elements')
         test.omk.createRessource(aleaData)
       }
+
       let contD = d3.select('#infosProjet').append('div').attr('class', 'col')
       let ulRT = contD.append('ul'),
         liRT = ulRT.selectAll('li').data(test.omk.rts).enter().append('li')
@@ -97,22 +98,6 @@
       /*usage de l'api github :https://docs.github.com/fr/rest/repos/contents?apiVersion=2022-11-28
       avec octokit : https://github.com/octokit/octokit.js
       */
-
-      async function fetchRepoInfo(owner, repo) {
-        const prs = await a.octo.rest.repos.get({
-          owner,
-          repo,
-        })
-        return prs
-      }
-
-      async function fetchRepoContributors(owner, repo) {
-        const ctbs = await a.octo.rest.repos.listContributors({
-          owner,
-          repo,
-        })
-        return ctbs
-      }
     </script>
   </body>
 </html>
