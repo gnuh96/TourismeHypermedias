@@ -1,0 +1,26 @@
+{
+  "auth": {},
+  "errors": {
+    "password_valid": "Mot de passe invalide (Min 8 caractères, 1 majuscule, 1 chiffre et 1 caractère spécial)",
+    "check_password_valid": "Les mots de passe sont différents",
+    "error_file_too_big": "Le fichier est trop volumineux - 10Mb max",
+    "error_occured": "Une erreur est survenue, veuillez ressayer plus tard",
+    "error_not_allowed": "Vous n'êtes pas autorisé à effectuer cette action",
+    "error_file_upload": "Une erreur est survenue lors de l'enregistrement du fichier"
+  },
+  "menu": {},
+  "navBar": {
+    "french": "Français",
+    "english": "Anglais"
+  },
+  "home": {
+    "title_app": "Découvrir les saveurs asiatiques à Paris",
+    "footerCaption": "Copyright @ Master THYP & MTI. Tous droits réservés. Webdesign by gnuh96"
+  },
+  "boxSearch": {
+    "area": "Area",
+    "cuisine": "Cuisine",
+    "restaurant": "Restaurant",
+    "search": "Recherche"
+  }
+}
