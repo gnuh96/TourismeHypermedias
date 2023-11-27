@@ -1,0 +1,58 @@
+.cardResto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  padding: 30px;
+}
+
+.cardRestoContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #f4f4f4;
+  border-radius: 0.5rem;
+  width: 100%;
+  background-color: white;
+}
+
+.cardRestoImage {
+  padding: 1rem;
+  max-width: 100%;
+}
+
+.cardRestoImage img {
+  height: 200px;
+  max-width: 100%;
+}
+
+.cardRestoName {
+  width: 100%;
+}
+
+.cardRestoContainer {
+  width: 90%;
+}
+
+.cardResto .cardRestoLike {
+  width: 150px;
+  height: 40px;
+  border: 1px solid #d0d8e5;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.cardResto .cardRestoGroupLike {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.cardRestoGroupLike .nbLike {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0.5rem;
+}

@@ -16,6 +16,31 @@ tagr:Restaurant a rdfs:Class ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
+tagr:nblike a rdf:Property ;
+    rdfs:label "nblike" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+tagr:nbdislike a rdf:Property ;
+    rdfs:label "nbdislike" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+tagr:address a rdf:Property ;
+    rdfs:label "address" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+tagr:tags a rdf:Property ;
+    rdfs:label "tags" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+tagr:price a rdf:Property ;
+    rdfs:label "price" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
 tagr:Tag a rdfs:Class ;
     rdfs:label "Tag" ;
     rdfs:domain o:Resource ;
@@ -28,16 +53,6 @@ tagr:Avis a rdfs:Class ;
 
 tagr:User a rdfs:Class ;
     rdfs:label "User" ;
-    rdfs:domain o:Resource ;
-    vs:term_status "experimental" .
-
-tagr:nblike a rdf:Property ;
-    rdfs:label "nblike" ;
-    rdfs:domain o:Resource ;
-    vs:term_status "experimental" .
-
-tagr:nbdislike a rdf:Property ;
-    rdfs:label "nbdislike" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
