@@ -2,14 +2,23 @@ import {SubmitHandler, useForm} from 'react-hook-form'
 import './BoxSearch.css'
 import {useTranslation} from 'react-i18next'
 import Input from '../inputInApp/InputInApp'
+import {Dispatch, SetStateAction} from 'react'
 
 interface SearchFormData {
   area: string
   cuisine: string
   restaurant: string
 }
-
-export default function BoxSearch() {
+export interface BoxSearchProps {
+  searchValue: any
+  setSearchValue: Dispatch<SetStateAction<any>>
+  onClickButton?: () => void
+}
+export default function BoxSearch({
+  searchValue,
+  setSearchValue,
+  onClickButton = () => {},
+}: BoxSearchProps) {
   const {t} = useTranslation('boxSearch')
   const {
     register,
@@ -18,8 +27,9 @@ export default function BoxSearch() {
   } = useForm<SearchFormData>()
 
   const onSubmit: SubmitHandler<SearchFormData> = data => {
-    // Implement your search logic here
     console.log('Search with the following parameters:', data)
+    setSearchValue(data)
+    onClickButton()
   }
   return (
     <form className='boxSearch' onSubmit={handleSubmit(onSubmit)}>

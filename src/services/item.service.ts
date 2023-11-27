@@ -32,9 +32,6 @@ const getAllItemByClass = async (rt: string) => {
 const updateItemLikeById = async (nblike: string, id: string) => {
   const response = await instance.get(
     `http://localhost:8888/omeka-s/api/items/${id}`,
-    {
-      params: {key_identity: ident, key_credential: key},
-    },
   )
   const currentItemData = response.data
   currentItemData['tagr:nblike'][0]['@value'] = nblike

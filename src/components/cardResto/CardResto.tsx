@@ -11,7 +11,8 @@ export interface CardRestoProps {
 
 export default function CardResto({item}: CardRestoProps) {
   const [imgUrl, setImgUrl] = useState('')
-  const [nbLike, setNbLike] = useState(item.nblike)
+  const [nbLike, setNbLike] = useState(Number(item.nblike))
+  const [nbdisLike, setNbdisLike] = useState(Number(item.nbdislike))
 
   useEffect(() => {
     const fetchImg = async () => {
@@ -22,8 +23,13 @@ export default function CardResto({item}: CardRestoProps) {
   }, [item])
 
   const handleClickLike = () => {
-    let newLike = nbLike
-    setNbLike(newLike++)
+    const newLike = nbLike + 1
+    setNbLike(newLike)
+  }
+
+  const handleClickDisLike = () => {
+    const newLike = nbdisLike + 1
+    setNbdisLike(newLike)
   }
 
   //   useEffect(() => {
@@ -56,6 +62,14 @@ export default function CardResto({item}: CardRestoProps) {
                 {item.tags.join(' / ')}
               </span>
             </div>
+            <div className='cardRestoTag'>
+              <span
+                style={{
+                  color: 'rgba(0, 0, 0, 0.60)',
+                }}>
+                {item.address}
+              </span>
+            </div>
             <div className='cardRestoPrice'>
               <Icon type='price_icon' size='2rem' />
               <span
@@ -74,10 +88,10 @@ export default function CardResto({item}: CardRestoProps) {
                 <span>{nbLike}</span>
               </div>
               <div className='nbLike'>
-                <IconButton>
+                <IconButton onClick={handleClickDisLike}>
                   <Icon type='dislike_icon' size='1.5rem' />
                 </IconButton>
-                <span>{item.nbdislike}</span>
+                <span>{nbdisLike}</span>
               </div>
             </div>
           </div>
