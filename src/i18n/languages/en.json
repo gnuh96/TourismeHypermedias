@@ -47,5 +47,9 @@
     "cuisine": "Cuisine",
     "restaurant": "Restaurant",
     "search": "Search"
+  },
+  "search": {
+    "show": "Show favorite",
+    "nonshow": "Hide favorite"
   }
 }

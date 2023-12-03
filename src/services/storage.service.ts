@@ -14,6 +14,7 @@ const setUserAccess = (access: UserAccessType): void => {
 
 const removeUser = (): void => {
   localStorage.removeItem('user-access')
+  localStorage.removeItem('favoris')
 }
 
 const StorageService = {

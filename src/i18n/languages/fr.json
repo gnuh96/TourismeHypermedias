@@ -33,7 +33,6 @@
     "error_not_allowed": "Vous n'êtes pas autorisé à effectuer cette action",
     "error_file_upload": "Une erreur est survenue lors de l'enregistrement du fichier"
   },
-  "menu": {},
   "navBar": {
     "french": "Français",
     "english": "Anglais"
@@ -47,5 +46,9 @@
     "cuisine": "Cuisine",
     "restaurant": "Restaurant",
     "search": "Recherche"
+  },
+  "search": {
+    "show": "Afficher le favori",
+    "nonshow": "Masquer le favori"
   }
 }

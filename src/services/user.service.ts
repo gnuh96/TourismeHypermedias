@@ -1,19 +1,17 @@
 import instance from '../helpers/axios.instance'
 
-const getUsers = async (skip: number = 0, limit?: number) => {
-  const response = await instance.get('/users', {
-    params: {
-      filter: {
-        skip,
-        limit,
-      },
-    },
-  })
-  return response.data
+const updateUserById = async (body: any, id: string) => {
+  try {
+    const response = await instance.put(`/users/${id}`, body)
+    return response.data
+  } catch (error) {
+    console.error('Error updating item:', error)
+    throw error
+  }
 }
 
 const UserService = {
-  getUsers,
+  updateUserById,
 }
 
 export default UserService

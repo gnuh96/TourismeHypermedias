@@ -1,6 +1,8 @@
 import * as yup from 'yup'
 export interface UserAccessType {
   email: string
+  favoris: string[]
+  id: string
 }
 
 export interface LoginFormType {

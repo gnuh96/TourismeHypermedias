@@ -41,6 +41,7 @@ export default function AppBarCustom(props: any) {
     if (userAccess) {
       AuthService.logout()
       setUserAccess(null)
+      navigate('/')
     } else {
       navigate('/auth/login')
     }

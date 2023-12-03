@@ -37,6 +37,8 @@ export default function Login() {
       if (user) {
         const userAccess = {
           email: user.email,
+          favoris: user.favoris_restaurant,
+          id: user.id,
         }
         StorageService.setUserAccess(userAccess)
         navigate('/')
