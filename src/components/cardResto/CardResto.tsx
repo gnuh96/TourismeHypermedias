@@ -1,50 +1,37 @@
 import {useEffect, useState} from 'react'
 import Icon from '../icon/Icon'
 import './cardResto.css'
-import MediaService from '../../services/media.service'
 import {IconButton} from '@mui/material'
-import ItemService from '../../services/restaurant.service'
+import RestaurantService from '../../services/restaurant.service'
 
 export interface CardRestoProps {
   item: any
 }
 
 export default function CardResto({item}: CardRestoProps) {
-  const [imgUrl, setImgUrl] = useState('')
-  const [nbLike, setNbLike] = useState(Number(item.nblike))
-  const [nbdisLike, setNbdisLike] = useState(Number(item.nbdislike))
+  const [nbLike, setNbLike] = useState(item.nbLike)
+  const [nbdisLike, setNbdisLike] = useState(item.nbDislike)
 
-  useEffect(() => {
-    const fetchImg = async () => {
-      const data = await MediaService.getMediaById(item.imageUrlId)
-      setImgUrl(data)
-    }
-    fetchImg()
-  }, [item])
-
-  const handleClickLike = () => {
+  const handleClickLike = async () => {
     const newLike = nbLike + 1
     setNbLike(newLike)
+    await RestaurantService.updateRestaurantLikeById({nbLike: newLike}, item.id)
   }
 
-  const handleClickDisLike = () => {
+  const handleClickDisLike = async () => {
     const newLike = nbdisLike + 1
     setNbdisLike(newLike)
+    await RestaurantService.updateRestaurantLikeById(
+      {nbDislike: newLike},
+      item.id,
+    )
   }
-
-  //   useEffect(() => {
-  //     const updateLike = async () => {
-  //       const reponse = await ItemService.updateItemLikeById(nbLike, item.id)
-  //       console.log(reponse)
-  //     }
-  //     updateLike()
-  //   }, [nbLike])
 
   return (
     <div className='cardResto'>
       <div className='cardRestoContent'>
         <div className='cardRestoImage'>
-          <img src={imgUrl} />
+          <img src={item.img_url} />
         </div>
         <div className='cardRestoContainer'>
           <div className='cardRestoInfo'>
@@ -59,7 +46,9 @@ export default function CardResto({item}: CardRestoProps) {
                 style={{
                   color: 'rgba(0, 0, 0, 0.60)',
                 }}>
-                {item.tags.join(' / ')}
+                {item.famous_product_tag
+                  .map((ele: any) => ele.name)
+                  .join(' / ')}
               </span>
             </div>
             <div className='cardRestoTag'>
@@ -95,6 +84,11 @@ export default function CardResto({item}: CardRestoProps) {
               </div>
             </div>
           </div>
+        </div>
+        <div className='cardRestoSite'>
+          <a href={item.site} target='_blank' rel='noopener noreferrer'>
+            {item.site}
+          </a>
         </div>
       </div>
     </div>

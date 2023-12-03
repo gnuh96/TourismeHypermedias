@@ -34,12 +34,10 @@ export default function Login() {
       }
 
       const user = await AuthService.login(loginBody)
-      console.log('0', user)
       if (user) {
         const userAccess = {
           email: user.email,
         }
-        console.log('1', userAccess)
         StorageService.setUserAccess(userAccess)
         navigate('/')
       }

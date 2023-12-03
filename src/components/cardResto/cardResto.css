@@ -56,3 +56,18 @@
   align-items: center;
   padding: 0 0.5rem;
 }
+
+.cardRestoSite {
+  background-color: #e9ecef;
+  padding: 0.4rem 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardRestoSite a {
+  color: inherit; /* or set your desired color */
+  text-decoration: none; /* Optional: remove underline */
+  max-width: 90%;
+}
