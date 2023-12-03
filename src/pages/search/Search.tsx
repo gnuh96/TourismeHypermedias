@@ -2,7 +2,7 @@ import BoxSearch from '../../components/boxSearch/BoxSearch'
 import CardResto from '../../components/cardResto/CardResto'
 import './search.css'
 import {Dispatch, SetStateAction, useEffect, useState} from 'react'
-import ItemService from '../../services/item.service'
+import ItemService from '../../services/restaurant.service'
 export interface SearchProps {
   searchValue: any
   setSearchValue: Dispatch<SetStateAction<any>>

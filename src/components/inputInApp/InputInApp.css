@@ -35,14 +35,13 @@
 }
 
 .inputInAppWrapper input:disabled {
-  color: #424D66;
+  color: #424d66;
   opacity: 1;
 }
 
-
 .inputInAppWrapper label {
   font-size: 16px;
-  color: #7A8295
+  color: #7a8295;
 }
 
 .inputInAppWrapper input.errorInput {
@@ -66,7 +65,7 @@
   font-size: 1rem;
   line-height: 1rem;
   padding-left: 1rem;
-  color: #535E79;
+  color: #535e79;
 }
 
 .inputInAppWrapper input.dateInput {
@@ -79,4 +78,11 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
+}
+
+.inputInAppWrapper .passwordIcon {
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
 }

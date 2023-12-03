@@ -17,7 +17,6 @@ export default function Home() {
   })
 
   const onClickButton = () => {
-    console.log(1)
     setIsSearchVisible(true)
   }
 

@@ -1,0 +1,98 @@
+.registerContainer {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.registerContainer h1 {
+  text-align: center;
+  color: #fff;
+  margin: 0;
+  width: 80%;
+  font-size: 1.5rem;
+}
+
+.registerContainer .LogoImageWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 0 3rem 0;
+}
+
+.registerContainer .LogoImageWrapper img {
+  width: 3rem;
+}
+
+.selectContainer {
+  width: 100%;
+  height: 4.5rem;
+}
+
+.RegisterForm {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 2rem;
+  margin-top: 1rem;
+}
+
+.CheckboxRegisterField {
+  flex-direction: column;
+}
+
+.CheckboxRegisterField .CheckboxFieldWrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.RegisterCheckbox {
+  color: #fff;
+}
+
+.CheckboxLabel {
+  font-size: 0.7rem;
+  line-height: 1rem;
+  color: #fff;
+}
+
+.first-confirmation-text {
+  font-size: 18;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  /* number of lines to show */
+  line-clamp: 4;
+  -webkit-box-orient: vertical;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.second-confirmation-text {
+  font-size: 18;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  /* number of lines to show */
+  line-clamp: 4;
+  -webkit-box-orient: vertical;
+  color: #ffffff;
+  margin-bottom: 50px;
+}
+
+.confirmationInscription {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 80%;
+}
+
+.container_text {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 280px;
+}

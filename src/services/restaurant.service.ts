@@ -3,8 +3,8 @@ import instance from '../helpers/axios.instance'
 const ident = 'QxZtBGKiEApx6I1qbEQMTWYlZj5Syqr5'
 const key = 'y71akXpMZh5U2oK9wCCj1TWUKWLdknjY'
 
-const getAllItem = async () => {
-  const response = await instance.get(`http://localhost:8888/omeka-s/api/items`)
+const getAllRestaurant = async () => {
+  const response = await instance.get(`api/restaurants`)
   return response.data
 }
 const getAllItemByClass = async (rt: string) => {
@@ -46,7 +46,7 @@ const updateItemLikeById = async (nblike: string, id: string) => {
 }
 
 const ItemService = {
-  getAllItem,
+  getAllRestaurant,
   getAllItemByClass,
   updateItemLikeById,
 }

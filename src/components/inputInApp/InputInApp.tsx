@@ -72,7 +72,9 @@ const Input = forwardRef<HTMLInputElement, InputFieldType>(
             disabled={disabled}
           />
           {type === 'password' && (
-            <button onClick={(e: any) => onClick(e)}>
+            <div
+              style={{position: 'absolute', right: '12px', top: '10.5px'}}
+              onClick={(e: any) => onClick(e)}>
               {displayPassword ? (
                 <div className='passwordIcon'>
                   <Icon type='eye_close' size='1.2rem' />
@@ -82,7 +84,7 @@ const Input = forwardRef<HTMLInputElement, InputFieldType>(
                   <Icon type='eye_open' size='1.2rem' />
                 </div>
               )}
-            </button>
+            </div>
           )}
           {!!error && <div className='errorFormField'>{error}</div>}
         </div>

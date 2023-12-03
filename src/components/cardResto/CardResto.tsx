@@ -3,7 +3,7 @@ import Icon from '../icon/Icon'
 import './cardResto.css'
 import MediaService from '../../services/media.service'
 import {IconButton} from '@mui/material'
-import ItemService from '../../services/item.service'
+import ItemService from '../../services/restaurant.service'
 
 export interface CardRestoProps {
   item: any
