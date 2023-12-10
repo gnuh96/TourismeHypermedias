@@ -21,11 +21,13 @@ Vous pouvez consulter notre rétroplanning à l'adresse suivante : [Gantt Chart]
 ## 5. Maquette de la Base de Données
 
 a. ![Diagramme de la Base de Données](https://github.com/gnuh96/TourismeHypermedias/blob/master/src/assets/svg/SQL%20Diagram.svg)
+
 b. [Script sql](https://github.com/gnuh96/TourismeHypermedias/blob/master/omk/bdd/omk.sql)
 
 ## 6. Modélisation sémantique de la BDD
 
 a. [Vocabulaire du projet](https://github.com/gnuh96/TourismeHypermedias/blob/master/bdd/vocab.ttl)
+
 b. [Ressource templates de l’application](https://github.com/gnuh96/TourismeHypermedias/tree/master/bdd/rt)
 
 ## 7. Dessins, brouillons, ou tests de l’interface graphique
@@ -40,6 +42,7 @@ b. [Ressource templates de l’application](https://github.com/gnuh96/TourismeHy
 ## 9. Retour d’expérience ou réflexion personnelle.
 
 a. Tuan Hung NGUYEN 
+
 Ce projet représente une opportunité exceptionnelle pour traverser toutes les étapes de la création d'une application en équipe. Il est important de souligner que la recherche d'une idée, la collecte de données, et la gestion de projet sont autant de facettes cruciales de ce processus. En tant que Développeur Web Fullstack, cette expérience revêt une signification particulière pour moi, notamment parce que ma collègue ne possède pas de compétences informatiques. Cela m'a permis de développer la capacité de travailler avec des clients qui ne sont pas familiers avec l'informatique, nécessitant une communication claire pour expliquer les fonctionnalités et les procédures de test, entre autres. Il m'obligeant à adapter mon langage technique pour le rendre accessible. De plus, j'ai eu l'occasion de me familiariser avec de nouvelles technologies telles qu'OmekaS, MongoDb, et Docker. Cette expérience s'est avérée extrêmement bénéfique, non seulement pour mon travail actuel en entreprise, mais aussi en perspective pour mon avenir professionnel.
 
 b. Jiaqi
