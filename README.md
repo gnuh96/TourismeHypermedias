@@ -47,4 +47,10 @@ Ce projet représente une opportunité exceptionnelle pour traverser toutes les 
 
 b. Jiaqi
 
-## 10. Prototype fonctionnel
+## 10. Structure du projet
+
+- Branche dev_versionOmekaS : le branche qui va connecter avec le back Omeka
+- Branche master : le branche qui va connecter avec le back NodeJs
+- ./riceGuide-back : Serveur NodeJs avec MongoDB, qui est déployé dans Docker avec docker-compose
+
+## 11. Prototype fonctionnel
