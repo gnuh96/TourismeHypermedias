@@ -54,3 +54,9 @@ b. Jiaqi
 - ./riceGuide-back : Serveur NodeJs avec MongoDB, qui est déployé dans Docker avec docker-compose
 
 ## 11. Prototype fonctionnel
+
+## Autre
+
+## Autre
+
+- Présentation : (https://github.com/gnuh96/TourismeHypermedias/blob/master/src/assets/Hypermedia.pdf)
