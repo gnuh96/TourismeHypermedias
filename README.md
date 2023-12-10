@@ -57,6 +57,4 @@ b. Jiaqi
 
 ## Autre
 
-## Autre
-
 - Présentation : (https://github.com/gnuh96/TourismeHypermedias/blob/master/src/assets/Hypermedia.pdf)
