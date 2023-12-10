@@ -1,14 +1,38 @@
 {
-  "auth": {},
+  "auth": {
+    "backToConnexion": "Revenir à la connexion",
+    "cancel": "annuler",
+    "email": "Email",
+    "password": "Mot de passe",
+    "register": "S'inscrire",
+    "check_password": "Vérifier le mot de passe",
+    "email_valid": "Email valide requis",
+    "password_valid": "Mot de passe invalide",
+    "have_account": "Déjà un compte ?",
+    "go_connect": "Me connecter",
+    "no_account": "Pas encore de compte ?",
+    "send": "Envoyer",
+    "connect": "Me connecter",
+    "welcome": "Bienvenue",
+    "login_title": "Inscrivez-vous !",
+    "connected": "Connecté",
+    "email_send": "Email envoyé",
+    "new_password": "Nouveau mot de passe",
+    "register_success_msg": "Votre compte a été créé avec succès! Veuillez vous connecter.",
+    "confirm": "Confirmation",
+    "USER_NOT_FOUND": "Utilisateur pas trouvé",
+    "EMAIL_ALREADY_EXISTS": "Cet email est déjà pris",
+    "ERROR_LOGIN": "erreur connexion",
+    "ok": "Ok"
+  },
   "errors": {
-    "password_valid": "Mot de passe invalide (Min 8 caractères, 1 majuscule, 1 chiffre et 1 caractère spécial)",
+    "password_valid": "Mot de passe invalide",
     "check_password_valid": "Les mots de passe sont différents",
     "error_file_too_big": "Le fichier est trop volumineux - 10Mb max",
     "error_occured": "Une erreur est survenue, veuillez ressayer plus tard",
     "error_not_allowed": "Vous n'êtes pas autorisé à effectuer cette action",
     "error_file_upload": "Une erreur est survenue lors de l'enregistrement du fichier"
   },
-  "menu": {},
   "navBar": {
     "french": "Français",
     "english": "Anglais"
@@ -22,5 +46,9 @@
     "cuisine": "Cuisine",
     "restaurant": "Restaurant",
     "search": "Recherche"
+  },
+  "search": {
+    "show": "Afficher le favori",
+    "nonshow": "Masquer le favori"
   }
 }

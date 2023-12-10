@@ -1,5 +1,30 @@
 {
-  "auth": {},
+  "auth": {
+    "backToConnexion": "Back to Login",
+    "cancel": "Cancel",
+    "email": "Email",
+    "password": "Password",
+    "register": "Register",
+    "check_password": "Check Password",
+    "email_valid": "Valid email required",
+    "password_valid": "Invalid password",
+    "have_account": "Already have an account?",
+    "go_connect": "Go to Login",
+    "no_account": "Don't have an account yet?",
+    "send": "Send",
+    "connect": "Login",
+    "welcome": "Welcome",
+    "login_title": "Sign Up!",
+    "connected": "Connected",
+    "email_send": "Email sent",
+    "new_password": "New Password",
+    "register_success_msg": "Your account has been successfully created! Please log in.",
+    "confirm": "Confirmation",
+    "USER_NOT_FOUND": "User not found",
+    "EMAIL_ALREADY_EXISTS": "This email is already taken",
+    "ERROR_LOGIN": "Login error",
+    "ok": "Ok"
+  },
   "errors": {
     "password_valid": "Mot de passe invalide (Min 8 caractères, 1 majuscule, 1 chiffre et 1 caractère spécial)",
     "check_password_valid": "Les mots de passe sont différents",
@@ -22,5 +47,9 @@
     "cuisine": "Cuisine",
     "restaurant": "Restaurant",
     "search": "Search"
+  },
+  "search": {
+    "show": "Show favorite",
+    "nonshow": "Hide favorite"
   }
 }

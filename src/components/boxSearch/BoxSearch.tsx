@@ -27,7 +27,6 @@ export default function BoxSearch({
   } = useForm<SearchFormData>()
 
   const onSubmit: SubmitHandler<SearchFormData> = data => {
-    console.log('Search with the following parameters:', data)
     setSearchValue(data)
     onClickButton()
   }

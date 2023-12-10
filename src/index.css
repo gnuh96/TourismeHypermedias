@@ -18,3 +18,9 @@ body {
   color: #caa756;
   font-size: 16px;
 }
+
+.--titleAuthText {
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: 700;
+}

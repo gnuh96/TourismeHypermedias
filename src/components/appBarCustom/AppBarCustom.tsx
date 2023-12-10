@@ -1,18 +1,29 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import AppBar from '@mui/material/AppBar'
 import Box from '@mui/material/Box'
 import Toolbar from '@mui/material/Toolbar'
 import Typography from '@mui/material/Typography'
 import {IconButton, Menu, MenuItem} from '@mui/material'
 import logoApp from '../../assets/png/logo.png'
-import MenuIcon from '@mui/icons-material/Menu'
 import Icon from '../icon/Icon'
 import LanguageIcon from '@mui/icons-material/Language'
 import {useTranslation} from 'react-i18next'
 import i18n from '../../i18n'
+import LoginIcon from '@mui/icons-material/Login'
+import LogoutIcon from '@mui/icons-material/Logout'
+import StorageService from '../../services/storage.service'
+import AuthService from '../../services/auth.service'
+import {useNavigate} from 'react-router-dom'
 
-export default function DenseAppBar(props: any) {
+export default function AppBarCustom(props: any) {
   const {t} = useTranslation('navBar')
+
+  const navigate = useNavigate()
+  const [userAccess, setUserAccess] = useState<any>(null)
+
+  useEffect(() => {
+    setUserAccess(StorageService.getUserAccess())
+  }, [])
 
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null)
   const handleMenuClick = (event: React.MouseEvent<HTMLElement>) => {
@@ -25,6 +36,15 @@ export default function DenseAppBar(props: any) {
     i18n.changeLanguage(language)
     handleMenuClose()
     setAnchorEl(null)
+  }
+  const handleClickLogButton = () => {
+    if (userAccess) {
+      AuthService.logout()
+      setUserAccess(null)
+      navigate('/')
+    } else {
+      navigate('/auth/login')
+    }
   }
   return (
     <Box sx={{}}>
@@ -39,7 +59,11 @@ export default function DenseAppBar(props: any) {
             padding: '10px 0',
           }}>
           <Box sx={{display: 'flex', position: 'absolute', bottom: -8}}>
-            <img src={logoApp} style={{height: 45}} />
+            <img
+              src={logoApp}
+              style={{height: 45}}
+              onClick={() => navigate('/')}
+            />
           </Box>
           <Box
             sx={{display: 'flex', justifyContent: 'flex-end', width: '100%'}}>
@@ -92,8 +116,9 @@ export default function DenseAppBar(props: any) {
                 edge='start'
                 color='inherit'
                 aria-label='menu'
-                sx={{mr: 2}}>
-                <MenuIcon />
+                sx={{mr: 2}}
+                onClick={handleClickLogButton}>
+                {userAccess ? <LogoutIcon /> : <LoginIcon />}
               </IconButton>
             </Box>
           </Box>

@@ -3,6 +3,8 @@ import en_icon from '../../assets/png/US flag.png'
 import price_icon from '../../assets/png/arcticons_priceconverter.png'
 import like_icon from '../../assets/svg/material-symbols_recommend1.svg'
 import dislike_icon from '../../assets/svg/material-symbols_recommend.svg'
+import eye_close from '../../assets/svg/eye_close.svg'
+import eye_open from '../../assets/svg/eye_open.svg'
 
 interface IconPropsType {
   type: string
@@ -53,6 +55,20 @@ export default function Icon({
     dislike_icon: (
       <img
         src={dislike_icon}
+        alt='icon'
+        style={{...iconStyle, height: size, width: size}}
+      />
+    ),
+    eye_close: (
+      <img
+        src={eye_close}
+        alt='icon'
+        style={{...iconStyle, height: size, width: size}}
+      />
+    ),
+    eye_open: (
+      <img
+        src={eye_open}
         alt='icon'
         style={{...iconStyle, height: size, width: size}}
       />

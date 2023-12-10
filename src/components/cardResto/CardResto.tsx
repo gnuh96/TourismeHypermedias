@@ -1,50 +1,88 @@
-import {useEffect, useState} from 'react'
+import {Dispatch, SetStateAction, useState} from 'react'
 import Icon from '../icon/Icon'
 import './cardResto.css'
-import MediaService from '../../services/media.service'
 import {IconButton} from '@mui/material'
-import ItemService from '../../services/item.service'
+import RestaurantService from '../../services/restaurant.service'
+import FavoriteIcon from '@mui/icons-material/Favorite'
+import StorageService from '../../services/storage.service'
+import UserService from '../../services/user.service'
+import {UserAccessType} from '../../types'
 
 export interface CardRestoProps {
   item: any
+  listRestoFavoris: any
+  setListRestoFavoris: Dispatch<SetStateAction<any>>
+  userId: string | undefined
+  userAccess: UserAccessType | null
 }
 
-export default function CardResto({item}: CardRestoProps) {
-  const [imgUrl, setImgUrl] = useState('')
-  const [nbLike, setNbLike] = useState(Number(item.nblike))
-  const [nbdisLike, setNbdisLike] = useState(Number(item.nbdislike))
-
-  useEffect(() => {
-    const fetchImg = async () => {
-      const data = await MediaService.getMediaById(item.imageUrlId)
-      setImgUrl(data)
-    }
-    fetchImg()
-  }, [item])
-
-  const handleClickLike = () => {
+export default function CardResto({
+  item,
+  userId,
+  userAccess,
+  listRestoFavoris,
+  setListRestoFavoris,
+}: CardRestoProps) {
+  const [nbLike, setNbLike] = useState(item.nbLike)
+  const [nbdisLike, setNbdisLike] = useState(item.nbDislike)
+  const [isFavorite, setIsFavorite] = useState(
+    listRestoFavoris && listRestoFavoris.includes(item.id),
+  )
+  const handleClickLike = async () => {
     const newLike = nbLike + 1
     setNbLike(newLike)
+    await RestaurantService.updateRestaurantLikeById({nbLike: newLike}, item.id)
   }
 
-  const handleClickDisLike = () => {
+  const handleClickDisLike = async () => {
     const newLike = nbdisLike + 1
     setNbdisLike(newLike)
+    await RestaurantService.updateRestaurantLikeById(
+      {nbDislike: newLike},
+      item.id,
+    )
   }
+  const handleClickFavorite = async () => {
+    if (isFavorite) {
+      // Remove the item.id from the list
+      console.log('1')
+      setListRestoFavoris((prevList: any[]) => {
+        const newList = prevList.filter(id => id !== item.id)
+        userId &&
+          UserService.updateUserById({favoris_restaurant: newList}, userId)
+        userAccess &&
+          StorageService.setUserAccess({
+            email: userAccess?.email || '',
+            id: userId || '',
+            favoris: newList,
+          })
+        return newList
+      })
+    } else {
+      setListRestoFavoris((prevList: any[]) => {
+        let updatedList = [...prevList]
+        if (!prevList.includes(item.id)) updatedList = [...prevList, item.id]
 
-  //   useEffect(() => {
-  //     const updateLike = async () => {
-  //       const reponse = await ItemService.updateItemLikeById(nbLike, item.id)
-  //       console.log(reponse)
-  //     }
-  //     updateLike()
-  //   }, [nbLike])
+        userId &&
+          UserService.updateUserById({favoris_restaurant: updatedList}, userId)
+        userAccess &&
+          StorageService.setUserAccess({
+            email: userAccess?.email || '',
+            id: userId || '',
+            favoris: updatedList,
+          })
+        return updatedList
+      })
+    }
+
+    setIsFavorite(!isFavorite)
+  }
 
   return (
     <div className='cardResto'>
       <div className='cardRestoContent'>
         <div className='cardRestoImage'>
-          <img src={imgUrl} />
+          <img src={item.img_url} />
         </div>
         <div className='cardRestoContainer'>
           <div className='cardRestoInfo'>
@@ -59,7 +97,9 @@ export default function CardResto({item}: CardRestoProps) {
                 style={{
                   color: 'rgba(0, 0, 0, 0.60)',
                 }}>
-                {item.tags.join(' / ')}
+                {item.famous_product_tag
+                  .map((ele: any) => ele.name)
+                  .join(' / ')}
               </span>
             </div>
             <div className='cardRestoTag'>
@@ -94,7 +134,18 @@ export default function CardResto({item}: CardRestoProps) {
                 <span>{nbdisLike}</span>
               </div>
             </div>
+            <IconButton
+              className='favoriteButton'
+              onClick={handleClickFavorite}
+              style={{position: 'absolute', top: '10px', right: '5px'}}>
+              <FavoriteIcon color={isFavorite ? 'warning' : 'inherit'} />
+            </IconButton>
           </div>
+        </div>
+        <div className='cardRestoSite'>
+          <a href={item.site} target='_blank' rel='noopener noreferrer'>
+            {item.site}
+          </a>
         </div>
       </div>
     </div>
