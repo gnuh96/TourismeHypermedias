@@ -20,7 +20,9 @@ Vous pouvez consulter notre rétroplanning à l'adresse suivante : [Gantt Chart]
 
 ## 5. Maquette de la Base de Données
 
-a. ![Diagramme de la Base de Données](https://github.com/gnuh96/TourismeHypermedias/blob/master/src/assets/svg/SQL%20Diagram.svg)
+a. Diagramme de la Base de Données
+
+![Diagramme de la Base de Données](https://github.com/gnuh96/TourismeHypermedias/blob/master/src/assets/svg/SQL%20Diagram.svg)
 
 b. [Script sql](https://github.com/gnuh96/TourismeHypermedias/blob/master/omk/bdd/omk.sql)
 
