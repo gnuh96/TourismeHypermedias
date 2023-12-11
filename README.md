@@ -3,7 +3,7 @@
 ## 1. Auteurs
 
 - Tuan Hung NGUYEN (M2 THYP) - 21006891
-- Jiaqi Ai (M2 MTI)
+- Jiaqi Ai (M2 MTI) - 23011499
 
 ## 2. Introduction
 
@@ -12,7 +12,7 @@ L'objectif de ce projet est de promouvoir la véritable cuisine asiatique à Par
 ## 3. Répartition des Tâches
 
 - Tuan Hung : Responsable de la majorité des tâches de développement (codage, création de la base de données, déploiement).
-- Jiaqi : Responsable de la partie conception, de la collecte de données sur les restaurants et des tests de l'application.
+- Jiaqi AI : Responsable de la partie conception, de la collecte de données sur les restaurants et des tests de l'application.
 
 ## 4. Rétroplanning
 
@@ -45,7 +45,9 @@ a. Tuan Hung NGUYEN
 
 Ce projet représente une opportunité exceptionnelle pour traverser toutes les étapes de la création d'une application en équipe. Il est important de souligner que la recherche d'une idée, la collecte de données, et la gestion de projet sont autant de facettes cruciales de ce processus. En tant que Développeur Web Fullstack, cette expérience revêt une signification particulière pour moi, notamment parce que ma collègue ne possède pas de compétences informatiques. Cela m'a permis de développer la capacité de travailler avec des clients qui ne sont pas familiers avec l'informatique, nécessitant une communication claire pour expliquer les fonctionnalités et les procédures de test, entre autres. Il m'obligeant à adapter mon langage technique pour le rendre accessible. De plus, j'ai eu l'occasion de me familiariser avec de nouvelles technologies telles qu'OmekaS, MongoDb, et Docker. Cette expérience s'est avérée extrêmement bénéfique, non seulement pour mon travail actuel en entreprise, mais aussi en perspective pour mon avenir professionnel.
 
-b. Jiaqi
+b. Jiaqi AI
+
+Participer à ce projet a été pour moi une expérience extraordinaire, qui a amélioré mes compétences en gestion de projet et en communication. La collaboration avec Tuan a également été une expérience très enrichissante. Ses connaissances professionnelles en développement technique ont représenté une excellente opportunité d'apprentissage pour moi. Nos échanges m'ont aidée à mieux comprendre les limitations techniques et à prendre en compte ces facteurs dans le processus de conception et de test. En travaillant avec lui, j'ai appris à intégrer une perspective non technique dans un projet technologique, garantissant que notre produit soit non seulement puissant, mais aussi convivial pour les utilisateurs. Cette expérience a non seulement renforcé mes compétences, mais a également jeté des bases solides pour ma future carrière professionnelle.
 
 ## 10. Structure du projet
 
